@@ -1,6 +1,6 @@
 # myproject
 
-This template should help get you started developing with Vue 3 in Vite.
+This template should help get you started developing with Vue 3 in Vite.  
 The API used is written in python[simple-API](https://github.com/hsuan744172/simple-API)
 
 ## Recommended IDE Setup
