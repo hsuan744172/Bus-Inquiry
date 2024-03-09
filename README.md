@@ -1,36 +1,11 @@
-# myproject
-
+# Bus-Inquiry
+Increase chances of catching the bus.
+## myproject
 This template should help get you started developing with Vue 3 in Vite.  
 The API used is written in python3 [simple-API](https://github.com/hsuan744172/simple-API).
 
-## Recommended IDE Setup
+## Use it 
+Open the link [my bus web](https://hsuan744172.github.io/Bus-Inquiry/)  
+and wait for a few minute to wake up the api(on Render)
+,then you can inquire the bus arriving time.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
