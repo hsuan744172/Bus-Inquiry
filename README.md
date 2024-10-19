@@ -12,11 +12,11 @@ and wait for a few minute to wake up the api(on Render)
 ## practical use
 資料來源是大臺北公車網站
 
-1.先選擇車號->去回程->站別 
-2.每次選下一個想查詢的站都要重新按一次去回程
-![916 實際查詢]（picture/picture1.png）
-![939 實際查詢]（picture/picture2.png）
-![939 全部站別狀況]（picture/picture3.png）
+    - 先選擇車號->去回程->站別 
+    - 每次選下一個想查詢的站都要重新按一次去回程
+![916 實際查詢](picture/picture1.png)
+![939 實際查詢](picture/picture2.png)
+![939 全部站別狀況](picture/picture3.png)
 
 
 
