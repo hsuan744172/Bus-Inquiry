@@ -2,18 +2,9 @@ FROM jenkins/jenkins:lts
 
 USER root
 
-# Install Node.js 16.x (more stable version for SonarQube)
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash - && \
     apt-get update && \
     apt-get install -y nodejs && \
-    npm install -g npm@8 && \
-    npm install -g sonar-scanner && \
     rm -rf /var/lib/apt/lists/*
 
-# Set permissions for Jenkins user
-RUN chown -R jenkins:jenkins /usr/lib/node_modules /usr/bin/node /usr/bin/npm
-
 USER jenkins
-
-# Verify Node.js and SonarScanner installation
-RUN node --version && npm --version && sonar-scanner --version

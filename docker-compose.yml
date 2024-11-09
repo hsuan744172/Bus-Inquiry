@@ -4,29 +4,29 @@ services:
       context: .
       dockerfile: jenkinsDockerfile
     container_name: jenkins
-    network_mode: host
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    networks:
+      - jenkins-net
     volumes:
       - jenkins_home:/var/jenkins_home
-    environment:
-      - SONARQUBE_URL=http://sonarqube:9000
 
   sonarqube:
     image: sonarqube:community
     container_name: sonarqube
     ports:
       - "9000:9000"
-    environment:
-      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+    networks:
+      - jenkins-net
     volumes:
       - sonarqube_conf:/opt/sonarqube/conf
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_logs:/opt/sonarqube/logs
       - sonarqube_extensions:/opt/sonarqube/extensions
-    networks:
-      - jenkins-sonarqube
 
 networks:
-  jenkins-sonarqube:
+  jenkins-net:
     driver: bridge
 
 volumes:
